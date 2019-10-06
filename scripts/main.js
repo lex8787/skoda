@@ -1,12 +1,4 @@
 
-				  
-
-var myHeading = document.querySelector("h1");
-myHeading.textContent = "Best car!";
-
-
-
-
 var myImage = document.querySelector("img");
 
 myImage.onclick = function() {
@@ -27,6 +19,7 @@ function setUserName() {
    localStorage.setItem("name", myName);
    myHeading.innerHTML = "Skoda is cool, "  + myName;
 }
+
 if(!localStorage.getItem("name")) {
 					setUserName();
 		} else {
